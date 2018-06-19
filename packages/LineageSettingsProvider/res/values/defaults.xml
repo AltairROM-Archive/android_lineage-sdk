@@ -40,9 +40,9 @@
          * 4: Hide the battery status information
          * 5: Display the battery as icon in landscape mode
          * 6: Display the battery as plain text
-         * default: 2
+         * default: 0
          -->
-    <integer name="def_battery_style">2</integer>
+    <integer name="def_battery_style">0</integer>
 
     <!-- Default for LineageSettings.Secure.LOCKSCREEN_VISUALIZER_ENABLED -->
     <bool name="def_lockscreen_visualizer">true</bool>
