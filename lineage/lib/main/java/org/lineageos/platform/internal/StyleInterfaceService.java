@@ -106,7 +106,7 @@ public class StyleInterfaceService extends LineageSystemService {
     private int getGlobalStyleInternal() {
         return LineageSettings.System.getInt(mContext.getContentResolver(),
                 LineageSettings.System.BERRY_GLOBAL_STYLE,
-                StyleInterface.STYLE_GLOBAL_AUTO_WALLPAPER);
+                StyleInterface.STYLE_GLOBAL_LIGHT);
     }
 
     private boolean setAccentInternal(String pkgName) {
