@@ -113,6 +113,8 @@
     <java-symbol type="integer" name="config_doubleTapOnMenuBehavior" />
     <java-symbol type="integer" name="config_longPressOnAssistBehavior" />
     <java-symbol type="integer" name="config_doubleTapOnAssistBehavior" />
+    <java-symbol type="array" name="keyhandler_keycodes" />
+    <java-symbol type="array" name="keyhandler_packages" />
 
     <!-- Camera key type -->
     <java-symbol type="bool" name="config_singleStageCameraKey" />
