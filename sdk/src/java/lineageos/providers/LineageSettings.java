@@ -2099,6 +2099,54 @@ public final class LineageSettings {
         /* Altair ROM System Settings Start */
         /************************************/
 
+        /**
+         * Action to perform when the back key is double-tapped.
+         * (Default can be configured via config_doubleTapOnHardwareBackBehavior)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         * @hide
+         */
+        public static final String KEY_BACK_DOUBLE_TAP_ACTION = "key_back_double_tap_action";
+
+        /** @hide */
+        public static final Validator KEY_BACK_DOUBLE_TAP_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 18);
+
+        /**
+         * Action to perform when the app switch key is double-tapped.
+         * (Default can be configured via config_doubleTapOnHardwareAppSwitchBehavior)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         * @hide
+         */
+        public static final String KEY_APP_SWITCH_DOUBLE_TAP_ACTION = "key_app_switch_double_tap_action";
+
+        /** @hide */
+        public static final Validator KEY_APP_SWITCH_DOUBLE_TAP_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 18);
+
+        /**
+         * Action to perform when the menu key is double-tapped.
+         * (Default can be configured via config_doubleTapOnHardwareMenuBehavior)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         * @hide
+         */
+        public static final String KEY_MENU_DOUBLE_TAP_ACTION = "key_menu_double_tap_action";
+
+        /** @hide */
+        public static final Validator KEY_MENU_DOUBLE_TAP_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 18);
+
+        /**
+         * Action to perform when the assist key is double-tapped.
+         * (Default can be configured via config_doubleTapOnHardwareAssistBehavior)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         * @hide
+         */
+        public static final String KEY_ASSIST_DOUBLE_TAP_ACTION = "key_assist_double_tap_action";
+
+        /** @hide */
+        public static final Validator KEY_ASSIST_DOUBLE_TAP_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 18);
+
         /**********************************/
         /* Altair ROM System Settings End */
         /**********************************/
@@ -2396,6 +2444,10 @@ public final class LineageSettings {
             VALIDATORS.put(__MAGICAL_TEST_PASSING_ENABLER,
                     __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR);
             // Altair ROM system settings start
+            VALIDATORS.put(KEY_BACK_DOUBLE_TAP_ACTION, KEY_BACK_DOUBLE_TAP_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_APP_SWITCH_DOUBLE_TAP_ACTION, KEY_APP_SWITCH_DOUBLE_TAP_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_MENU_DOUBLE_TAP_ACTION, KEY_MENU_DOUBLE_TAP_ACTION_VALIDATOR);
+            VALIDATORS.put(KEY_ASSIST_DOUBLE_TAP_ACTION, KEY_ASSIST_DOUBLE_TAP_ACTION_VALIDATOR);
             // Altair ROM system settings end
         };
         // endregion
